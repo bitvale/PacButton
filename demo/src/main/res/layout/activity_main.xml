@@ -6,13 +6,71 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <com.bitvale.pacbutton.PacButton
+        android:id="@+id/pac_button"
+        android:layout_width="@dimen/pac_size"
+        android:layout_height="@dimen/pac_size"
+        android:layout_marginStart="@dimen/margin_small"
+        android:layout_marginEnd="@dimen/margin_small"
+        android:layout_marginBottom="@dimen/margin_medium"
+        app:bottomIcon="@drawable/ic_photo"
+        app:iconHeight="@dimen/icon_size"
+        app:iconWidth="@dimen/icon_size"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/shape_3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shape_2"
+        app:topIcon="@drawable/ic_video" />
+
+    <ImageView
+        android:id="@+id/shape_1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:padding="@dimen/padding_small"
+        app:layout_constraintBottom_toBottomOf="@+id/shape_2"
+        app:layout_constraintEnd_toStartOf="@+id/shape_2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/circle_shape" />
+
+    <ImageView
+        android:id="@+id/shape_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        app:layout_constraintBottom_toBottomOf="@+id/pac_button"
+        app:layout_constraintEnd_toStartOf="@+id/pac_button"
+        app:layout_constraintStart_toEndOf="@+id/shape_1"
+        app:srcCompat="@drawable/circle_shape" />
+
+    <ImageView
+        android:id="@+id/shape_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        app:layout_constraintBottom_toBottomOf="@+id/pac_button"
+        app:layout_constraintEnd_toStartOf="@+id/shape_4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/pac_button"
+        app:srcCompat="@drawable/circle_shape" />
+
+    <ImageView
+        android:id="@+id/shape_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_small"
+        app:layout_constraintBottom_toBottomOf="@+id/shape_3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/shape_3"
+        app:srcCompat="@drawable/circle_shape" />
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="156dp"
+        android:layout_height="156dp"
+        app:layout_constraintBottom_toTopOf="@+id/pac_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_photo_cam" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

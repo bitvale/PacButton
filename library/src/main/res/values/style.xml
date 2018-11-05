@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PacButton">
+        <item name="pacGradientColor_1">@color/gradient_color_1</item>
+        <item name="pacGradientColor_2">@color/gradient_color_2</item>
+    </style>
+</resources>

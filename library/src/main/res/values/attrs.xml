@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="PacButton">
+        <attr name="topIcon" format="reference"/>
+        <attr name="bottomIcon" format="reference"/>
+        <attr name="iconHeight" format="dimension"/>
+        <attr name="iconWidth" format="dimension"/>
+        <attr name="pacColor" format="color"/>
+        <attr name="pacGradientColor_1" format="color"/>
+        <attr name="pacGradientColor_2" format="color"/>
+    </declare-styleable>
+</resources>
