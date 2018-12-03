@@ -8,6 +8,10 @@
 
 Created this cool [video/photo switch animation](https://dribbble.com/shots/5487871-Video-Photo-Switcher-Exploration) from [Oleg Frolov](https://dribbble.com/Volorf) as android library. 
 
+<a href="https://dribbble.com/shots/5613598-Video-Photo-Switcher">
+  <img alt="Design on Dribbble" src="/art/dribbble.png" width="196" height="80" hspace="15" />
+</a>
+
 USAGE
 -----
 
